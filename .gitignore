@@ -1,52 +1,21 @@
-# Prerequisites
-*.d
+#include <studio.h>
+int main() {
+// prompting the user for input
+Printf("enter the student's result: "); 
+int result; 
+Scanf("%d",&result); 
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+// grading the result 
+if(result > 85) {
+  printf("Grade A"); 
+}esle if(result > 75) {
+  printf("Grade B"); 
+}else if(result > 65) {
+  Printf("Grade C"); 
+}else if(result > 55) {
+  printf("Grade D"); 
+}else { 
+  printf("fail"); 
+}
+return 0; 
+} 
